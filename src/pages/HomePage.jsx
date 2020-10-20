@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { allProjects } from "../data";
+// import { allProjects } from "../data";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 
 function HomePage() {
     const [projectList, setProjectList] = useState([]);
 
     useEffect(() => {
+        // setProjectList(allProjects);
+        
         fetch(`${process.env.REACT_APP_API_URL}projects`)
         .then((results) => {
             return results.json();
