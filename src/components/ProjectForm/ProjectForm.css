@@ -1,0 +1,15 @@
+.project-form {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    justify-content: left;
+}
+
+.p1 {
+    max-width: min-content;
+    border: 1px solid black;
+    margin: 50px;
+    object-fit: cover;
+    box-shadow: 8px 10px 10px rgb(223, 169, 214);
+}
+

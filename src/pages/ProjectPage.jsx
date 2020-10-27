@@ -15,6 +15,7 @@ function ProjectPage() {
         });
     }, []);
     console.log(projectData, 'hello')   
+    
     return (
         <div>
             <h2>{projectData.title}</h2>

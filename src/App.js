@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import ProjectPage from "./pages/ProjectPage";
+import ProjectCreatePage from "./pages/ProjectCreatePage";
 import LoginPage from "./pages/LoginPage";
 
 function App() {
@@ -24,11 +25,14 @@ function App() {
           </Route>
           <Route path="/projects/:id">
             <ProjectPage />
-            </Route>
-            <Route path="/login">
-              <LoginPage />
-            </Route>
-            <Route path="/">
+          </Route>
+          <Route path="/projectcreate">
+            <ProjectCreatePage />
+          </Route>
+          <Route path="/login">
+            <LoginPage />
+          </Route>
+          <Route path="/">
             <HomePage />
           </Route>
         </Switch>
