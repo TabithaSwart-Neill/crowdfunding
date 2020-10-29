@@ -24,7 +24,7 @@ function ProjectForm() {
       window.alert("Not Logged In");
       return;
     }
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/projects/`, {
+    const response = await fetch(`${process.env.REACT_APP_API_URL}projects/`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function ProjectForm() {
       <div className="project-form">
         <label htmlFor="goal">Goal:</label>
         <input
-          type="text"
+          type="integer"
           id="goal"
           placeholder="Enter Project Goal"
           onChange={handleChange}
@@ -85,6 +85,15 @@ function ProjectForm() {
           type="text"
           id="is_open"
           placeholder="True/False"
+          onChange={handleChange}
+        ></input>
+      </div>
+      <div className="project-form">
+        <label htmlFor="date_created">Project creation date today? </label>
+        <input
+          type="text"
+          id="date_created"
+          placeholder="2020-03-20T14:28:23.382748Z"
           onChange={handleChange}
         ></input>
       </div>
