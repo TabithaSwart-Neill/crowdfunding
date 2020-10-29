@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+
 function ProjectPage() {
     const [projectData, setProjectData] = useState({ pledges: [] });
     const { id } = useParams();
@@ -15,6 +16,7 @@ function ProjectPage() {
         });
     }, []);
     console.log(projectData, 'hello')   
+    
     
     return (
         <div>

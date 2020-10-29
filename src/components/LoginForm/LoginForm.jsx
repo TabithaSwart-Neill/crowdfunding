@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import "./LoginForm.css";
 
 function LoginForm() {
     const [credentials, setCredentials] = useState({
@@ -42,7 +43,7 @@ const handleSubmit = (e) => {
     };
 
 return (
-    <form>
+    <form className="loginform">
         <div>
             <label htmlFor="username">Username:</label>
             <input
