@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import ProjectPage from "./pages/ProjectPage";
 import ProjectCreatePage from "./pages/ProjectCreatePage";
+import PledgesPage from "./pages/PledgesPage";
 import LoginPage from "./pages/LoginPage";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <Router>
       <div>
         <Nav />
-
+        
         <Switch>
           <Route path="/about">
             <AboutPage />
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/projectcreate">
             <ProjectCreatePage />
+          </Route>
+          <Route path="/pledgecard">
+            <PledgesPage />
           </Route>
           <Route path="/login">
             <LoginPage />
